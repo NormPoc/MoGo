@@ -1,0 +1,587 @@
+@import "defaults";
+
+.intro {
+    @include defaultwh;
+    background: url("../img/eagle-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #fff;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: $yellow;
+    border-bottom: 3px solid $yellow;
+    transition: 0.5s linear;
+}
+
+#svg-1:hover, #svg-2:hover {
+    border-bottom: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    h1 {
+        font-size: 9rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;    }
+    h2 {
+        font-size: 4.5rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.line {
+    height: 3px;
+    width: 4rem;
+    background: #fff;
+    margin: 2.5rem auto;
+}
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    margin: 0 auto;
+    padding: .5rem 2rem;
+}
+
+.button:hover {
+    color: $red;
+    border: 3px solid $red;
+    transition: .5s linear;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 14rem 2rem;
+    p {
+        border-top: 3px solid #fff;
+        font-size: 1.25rem;
+        padding: 1rem 10rem 0 0;
+        opacity: .55;
+        span {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+    }
+    p:hover {
+        opacity: 1;
+        cursor: pointer;
+        transition: .5s linear;
+    }
+    .active {
+        opacity: 1;
+        position: relative;
+    }
+    .active::before {
+        content: "";
+        display: block;
+        width: 4em;
+        height: 3px;
+        position: absolute;
+        top: -3px;
+        left: 0;
+        z-index: 1;
+        background: $red;
+    }
+    
+    
+}
+
+
+.about {
+    @include defaultwh;
+    color: #333;
+    padding: 6rem 0 0 0;
+    text-align: center;
+
+    h1 {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .line {
+        background-color: $red;
+    }
+    .roboto {
+        margin: 0 6rem;
+    }
+    p {
+        margin: 0 auto;
+
+    }
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem 0 6rem 0;
+    max-width: 1200px;
+
+
+    .img-content {
+            position: relative;
+
+            img {
+                height: 15rem;
+            }
+          
+            .gradient {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background: linear-gradient(180deg, $red, $yellow);
+              opacity: 0;
+              transition: 0.5s linear;
+            }
+
+            .gradient:hover {
+                opacity: .75;
+                box-shadow: 11px 11px 0px 0px $blue;
+            }
+    }
+}
+
+.stats {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    background: $blue;
+    
+    .statblock {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .stat {
+        color: #fff;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 4rem;
+        }
+        border-left: 1px #b5eae0 solid;
+        border-right: 1px #b5eae0 solid;
+        padding: 4rem;
+    }
+}
+
+
+.services {
+    margin: 10rem auto;
+    text-align: center;
+    .line {
+        background: $red;
+    }
+    h1, h2, p {
+        margin: 1rem auto;
+        padding: 0;
+        color: #333;
+
+    }
+    .roboto {
+        font-family: 'Roboto', sans-serif;
+        color: #999999;
+    }
+    .serviceblock {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        padding: 2rem 0;
+        p {
+            font-weight: bold;
+            margin: 1.2rem 0 0 0;
+        }
+        .service {
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    svg {
+        color: $blue;
+        width: 6rem;
+        height: 6rem;
+        margin: 0 1rem 0 0;
+    }
+}
+
+.design {
+    padding: 6rem 0 0 0;
+    color: #333;
+    text-align: center;
+    background: url("/img/lakebg.jpg") center no-repeat;
+    height: 850px;
+
+    .line {
+        background: $red;
+    }
+    img {
+        margin-top: -240px;
+    }
+}
+
+.do {
+    padding: 6rem 0 0 0;
+    text-align: center;
+    .kaushan, h1 {
+        color: #333;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .line {
+        background: $red;
+    }
+    .doblock {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+        text-align: left;
+        p {
+            padding: 0;
+            margin: 0 auto;
+        }
+        .accordion {
+            width: 570px;
+        }
+    }
+    img {
+        background: #222;
+        color: rgb(255, 255, 255);
+        height: 200px;
+    }
+}
+
+.team {
+    color: #333;
+    padding: 4rem;
+    text-align: center;
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .line {
+        background: $red;
+    }
+}
+
+.employees {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 4rem;
+    .employee {
+        padding: 1rem;
+
+        p {
+            font-weight: bold;
+        }
+        .roboto {
+            font-style: italic;
+        }
+
+        .img-content {
+            position: relative;
+
+            img {
+                height: 30rem;
+            }
+          
+            .gradient {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background: linear-gradient(180deg, $red, $yellow);
+              opacity: 0;
+              transition: 0.5s linear;
+            }
+
+            .gradient:hover {
+                opacity: .75;
+                box-shadow: 11px 11px 0px 0px $blue;
+            }
+            
+        }
+    }
+}
+
+.projects {
+    color: #333;
+    text-align: center;
+    .line {
+        background: $red;
+    }
+    .project-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-content {
+        position: relative;
+      
+        .gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(180deg, $red, $yellow);
+            opacity: 0;
+            transition: 0.5s linear;
+            .text {
+                color: #fff;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+                p, .roboto {
+                    margin: 0;
+                    padding: 0;
+                }
+                .roboto {
+                    color: #fff;
+                    font-style: italic;
+                }
+                svg {
+                    height: 40px;
+                    width: 40px;
+                }
+        }
+
+        .gradient:hover {
+            opacity: .75;
+            cursor: pointer;
+        }
+        
+    }
+    .commentblock {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            height: 20rem;
+            width: 20rem;
+            border-radius: 100%;
+        }
+        .author {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .line {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    max-width: 1200px;
+    border-top: 1px solid #e5e5e5;
+    margin: 1rem auto;
+    padding: 0 auto;
+    p {
+        font-weight: bold;
+        color: #333;
+        margin: 0 auto;
+        padding: 0 auto;
+
+
+    }
+    span {
+        color: $red;
+        margin: 0 auto;
+
+        padding: 0 auto;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        padding: 0;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 10rem;
+    }
+    .nav-link {
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        p {
+            border-top: 3px solid #fff;
+            font-size: 1.25rem;
+            padding: 0;
+            opacity: .55;
+            span {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+            
+        }
+        p:hover {
+            opacity: 1;
+            cursor: pointer;
+            transition: .5s linear;
+        }
+        .active {
+            opacity: 1;
+            position: relative;
+        }
+        .active::before {
+            content: "";
+            display: block;
+            width: 4em;
+            height: 3px;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            z-index: 1;
+            background: $red;
+        }
+    }
+}

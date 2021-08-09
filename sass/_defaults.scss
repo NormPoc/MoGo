@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+$red: #f38181;
+$yellow: #fce38a;
+$green: #eaffd0;
+$blue: #95e1d3;
+@mixin defaultwh {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+// Fonts
+
+p {
+    font-family: Roboto;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+}
+
+.kaushan {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 100;
+}
